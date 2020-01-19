@@ -1,4 +1,4 @@
-FROM node:10.15.3
+FROM node:10.15.3-slim
 RUN apt-get update \    && apt-get install -y nginx
 WORKDIR /app
 COPY . /app/
